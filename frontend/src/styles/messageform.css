@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.message-form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%; 
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.status-message {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.message-form-container input,
+.message-form-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+  display: block;
+}
+
+.message-form-container input:focus,
+.message-form-container textarea:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+.message-form-container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.message-form-container button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.message-form-container button:hover {
+  background-color: #004d40;
+  transform: translateY(-1px);
+}
+
+.message-form-container button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 600px) {
+  .message-form-container {
+    padding: 15px;
+  }
+
+  .message-form-container input,
+  .message-form-container textarea {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .message-form-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .message-form-container {
+    padding: 10px;
+  }
+
+  .message-form-container input,
+  .message-form-container textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .message-form-container button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

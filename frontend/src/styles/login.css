@@ -1,0 +1,77 @@
+
+.login-form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form-container .message {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #6f4e37; 
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.login-form-container form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+
+.login-form-container label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4b3621; 
+  font-size: 0.95rem;
+}
+
+.login-form-container input {
+  padding: 0.65rem 0.8rem;
+  border: 1.5px solid #d1c0a0; 
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.25s, box-shadow 0.25s;
+}
+
+.login-form-container input:focus {
+  border-color: #6f4e37;
+  box-shadow: 0 0 8px rgba(111,78,55,0.35); 
+}
+
+.login-form-container button {
+  padding: 0.7rem;
+  background-color: #6f4e37; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.2s, box-shadow 0.2s;
+}
+
+.login-form-container button:hover {
+  background-color: #5a3b28;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 500px) {
+  .login-form-container {
+    margin: 60px 1rem;
+    padding: 2rem;
+  }
+
+  .login-form-container button {
+    width: 100%;
+  }
+}

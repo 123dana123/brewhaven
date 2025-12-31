@@ -1,0 +1,140 @@
+
+.cart-page {
+  text-align: center;
+  padding: 20px;
+  color: #5a3e2b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-page h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #5a3e2b;
+}
+
+.cart-page p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5a3e2b;
+  margin-top: 10px;
+}
+
+
+.cart-items-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+
+
+#cart-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff8f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+#cart-form label {
+  margin-bottom: 6px;
+  font-weight: 500;      
+  color: #5a3e2b;
+  font-size: 0.95rem;
+}
+
+#cart-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+#cart-form input,
+#cart-form textarea {
+  background-color: #ffffff !important; 
+  color: #5a3e2b;
+  padding: 12px;
+  border: 1px solid #d8c9b8;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s ease;
+}
+
+#cart-form input:focus,
+#cart-form textarea:focus {
+  outline: none;
+  border-color: #a17c59;
+  box-shadow: 0 0 6px rgba(161, 124, 89, 0.4);
+}
+
+
+#cart-form button {
+  background-color: #a17c59;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#cart-form button:hover {
+  background-color: #855e3e;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .cart-items-list {
+    max-width: 90%;
+  }
+
+  #cart-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #cart-form input,
+  #cart-form textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  #cart-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .cart-page p {
+    font-size: 1rem;
+  }
+
+  #cart-form {
+    padding: 18px;
+  }
+
+  #cart-form input,
+  #cart-form textarea {
+    font-size: 0.9rem;
+  }
+
+  #cart-form button {
+    font-size: 0.9rem;
+    padding: 9px;
+  }
+}
+
