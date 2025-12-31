@@ -186,27 +186,7 @@ app.post("/replies", async (req, res) => {
   }
 });
 
-app.get("/comments", async (req, res) => {
-  try {
-    const [comments] = await pool.query(
-      "SELECT * FROM comments ORDER BY created_at DESC"
-    );
 
-    const [replies] = await pool.query(
-      "SELECT * FROM replies ORDER BY created_at ASC"
-    );
-
-    const commentsWithReplies = comments.map((c) => ({
-      ...c,
-      replies: replies.filter((r) => r.commentId === c.id), 
-    }));
-
-    res.json(commentsWithReplies);
-  } catch (err) {
-    console.error("SQL Error:", err);
-    res.status(500).json({ error: err.message });
-  }
-});
 
 app.get("/comments", async (req, res) => {
   try {
